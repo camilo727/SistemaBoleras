@@ -1,0 +1,26 @@
+<h1> LISTA DE BOLETAS</h1>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre de la boleta</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Comprar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let boletas of boleta">
+      <th scope="row">{{boletas.id}}</th>
+      <td>{{boletas.Nombre}}</td>
+      <td>{{boletas.Precio}}</td>
+      <td>{{boletas.Descripcion}}</td>
+      <td><!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" (click)="createCliente()" >
+          Comprar
+        </button>
+        </td>
+    </tr>
+  </tbody>
+</table>
+
